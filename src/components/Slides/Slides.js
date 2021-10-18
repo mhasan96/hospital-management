@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import banner1 from "../../images/1.jpg";
 import banner2 from "../../images/2.jpg";
 import banner3 from "../../images/3.jpg";
 import banner4 from "../../images/4.jpg";
@@ -75,8 +74,8 @@ const Slides = () => {
         </Carousel.Item>
       </Carousel>
       <div
-        className="container flex justify-around"
-        style={{ marginTop: "25px" }}
+        className="container flex justify-around flex-wrap"
+        style={{ marginTop: "25px", marginBottom: "25px" }}
       >
         <h3>
           <i

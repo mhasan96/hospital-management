@@ -15,6 +15,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-between">
       <Navbar
+        expand="lg"
         fixed="top"
         className={
           changeHeader
@@ -29,20 +30,23 @@ const NavBar = () => {
             </Navbar.Brand>
           </div>
           <div>
-            <Nav className="me-auto">
-              <Nav.Link className="text-black  " href="#home">
-                Home
-              </Nav.Link>
-              <Nav.Link className="text-black " href="#features">
-                Features
-              </Nav.Link>
-              <Nav.Link className="text-black " href="#pricing">
-                Pricing
-              </Nav.Link>
-              <Navbar.Text className="text-black ">
-                Signed in as: <a href="#login">Mark Otto</a>
-              </Navbar.Text>
-            </Nav>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link className="text-black  " href="#home">
+                  Home
+                </Nav.Link>
+                <Nav.Link className="text-black " href="#features">
+                  Features
+                </Nav.Link>
+                <Nav.Link className="text-black " href="#pricing">
+                  Pricing
+                </Nav.Link>
+                <Navbar.Text className="text-black ">
+                  Signed in as: <a href="#login">Mark Otto</a>
+                </Navbar.Text>
+              </Nav>
+            </Navbar.Collapse>
           </div>
         </Container>
       </Navbar>
