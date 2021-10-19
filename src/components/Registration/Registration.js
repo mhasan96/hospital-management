@@ -97,16 +97,16 @@ function Registration() {
           <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
             <div className="mx-5 mt-5">
               <form onSubmit={handleRegistration}>
-                <h3 className="text-primary">
+                <p className="text-primary text-2xl mb-8">
                   {isLogin
                     ? "Already have an account? Please, Login"
                     : " Please Register"}
-                </h3>
+                </p>
                 {!isLogin && (
                   <div className="row mb-3">
                     <label
                       htmlFor="inputEmail3"
-                      className="col-sm-2 col-form-label"
+                      className="col-sm-2 col-form-label "
                     >
                       Name
                     </label>
