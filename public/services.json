@@ -2,82 +2,64 @@
   {
     "id": 1,
     "name": "Gynaecological Clinic",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 85.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": "https://i.ibb.co/fSdZFys/1-2.jpg"
   },
   {
     "id": 2,
     "name": "Outpatient Surgery",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 85.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": " https://i.ibb.co/3sVrpdM/3-1.jpg"
   },
   {
     "id": 3,
     "name": "Laboratory Analysis",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 785.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": "  https://i.ibb.co/8xKh7cN/4-1.jpg"
   },
   {
     "id": 4,
     "name": "Pediatric Clinic",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 895.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": "https://i.ibb.co/zGxvDtC/5-1.jpg"
   },
   {
     "id": 5,
     "name": "Laryngological Clinic",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 750.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": " https://i.ibb.co/sQwtq0C/6-1.jpg"
   },
   {
     "id": 6,
     "name": "Ophthalmology Clinic",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 205.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": " https://i.ibb.co/TMMmWZK/7-1.jpg"
   },
   {
     "id": 7,
     "name": "Outpatient Surgery",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 44.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": " https://i.ibb.co/zGxvDtC/5-1.jpg"
   },
   {
     "id": 8,
     "name": "Cardiac Clinic",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 87.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": "  https://i.ibb.co/G2472QT/8.jpg"
   },
   {
     "id": 9,
     "name": "Outpatient Surgery",
-    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce. It includes endocrinology, female urology and pelvic malignancy. It’s important to have regular visits with your gynecologist to maintain your reproductive health. According to the American College of Obstetricians and Gynecologists, these visits should start between the ages of 13 and 15.Depending on your health history and how old you are, your gynecologist may use this visit to screen for problems like cervical or breast cancer. The well visit is also your chance to ask the gynecologist about reproductive health concerns like birth control.",
-    "cost": 105.99,
-    "doctor1": "Mehedi Hasan",
-    "doctor2": "Munna Bhai",
+    "details": "Gynaecology is concerned with the well-being and health of the female reproductive organs and the ability to reproduce.   ",
+
     "img": "https://i.ibb.co/Zdb6w5f/2-1.jpg"
   }
 ]

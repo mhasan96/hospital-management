@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { HashLink } from "react-router-hash-link";
+import useAuth from "../Hooks/useAuth";
 
 const NavBar = () => {
+  const { user, logOut } = useAuth();
+
   const [changeHeader, setChangeHeader] = useState(false);
   //header change function
   const onChangeHeader = () => {
@@ -33,17 +37,37 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link className="text-black  " href="#home">
+                <Nav.Link className="text-black" as={HashLink} to="/home#home">
                   Home
                 </Nav.Link>
-                <Nav.Link className="text-black " href="#features">
-                  Features
+                <Nav.Link
+                  className="text-black "
+                  as={HashLink}
+                  to="/home#services"
+                >
+                  Services
                 </Nav.Link>
                 <Nav.Link className="text-black " href="#pricing">
                   Pricing
                 </Nav.Link>
+                <Nav.Link className="text-black " href="#pricing">
+                  Sign Up
+                </Nav.Link>
+                <Nav.Link className="text-black " as={HashLink} to="/doctors">
+                  Doctors
+                </Nav.Link>
+                {user.email ? (
+                  <Nav.Link className="text-black " onClick={logOut}>
+                    Logout
+                  </Nav.Link>
+                ) : (
+                  <Nav.Link as={HashLink} to="/login" className="text-black ">
+                    Login
+                  </Nav.Link>
+                )}
                 <Navbar.Text className="text-black ">
-                  Signed in as: <a href="#login">Mark Otto</a>
+                  Signed in as: <a>{user?.displayName}</a>
+                  {/* console.log */}
                 </Navbar.Text>
               </Nav>
             </Navbar.Collapse>

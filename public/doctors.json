@@ -1,0 +1,38 @@
+[
+  {
+    "id": 501,
+    "name": "Prof. Dr. Munna ",
+    "details": "Medicine Specialist ",
+    "specialist": "MBBS, FCPS(Medi), MD(Chest).",
+    "contact": 880160000000,
+    "email": "munna@carehospital.com",
+    "img": "https://i.ibb.co/vkk1HpY/2.jpg"
+  },
+  {
+    "id": 502,
+    "name": "Prof. Dr. Joyee Hasan",
+    "details": "Colon Surgeon ",
+    "specialist": "FCPS(Colon), MD(Surgery). ",
+    "contact": 880160000000,
+    "email": "joyee@carehospital.com",
+    "img": "https://i.ibb.co/mtCrDTr/1-1.jpg"
+  },
+  {
+    "id": 503,
+    "name": "Prof. Dr. Mehedi Hasan",
+    "details": "Cancer Specialist ",
+    "specialist": "MBBS, FCPS(Cancer), MD(Chest). ",
+    "contact": 880160000000,
+    "email": "mehedi@carehospital.com",
+    "img": "https://i.ibb.co/RDv4Sbw/3-1.jpg"
+  },
+  {
+    "id": 504,
+    "name": "Prof. Dr. Sadia Tasnim",
+    "details": "Gynaecologist ",
+    "specialist": "MBBS, FCPS(Gyno), MD(Child).",
+    "contact": 880160000000,
+    "email": "sadia@carehospital.com",
+    "img": "https://i.ibb.co/99JNNbT/2-1.jpg"
+  }
+]

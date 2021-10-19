@@ -3,7 +3,7 @@ import img from "../../../images/top-quality.png";
 
 const Features = () => {
   return (
-    <div className="container">
+    <div id="home" className="container">
       <h1>World Class Treatment</h1>
       <div
         className=" grid sm:grid-cols-1  lg:grid-cols-3  gap-0"

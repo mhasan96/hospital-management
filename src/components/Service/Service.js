@@ -1,17 +1,10 @@
 import React from "react";
 import { Card, CardGroup, Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 // import Slider from "react-slick";
 
 const Service = ({ service }) => {
-  const { name, img, details } = service;
-  //   const settings = {
-  //     dots: true,
-  //     arrow: true,
-  //     infinite: true,
-  //     speed: 500,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //   };
+  const { name, img, details, id } = service;
   return (
     <div className="container">
       <CardGroup>
@@ -23,7 +16,9 @@ const Service = ({ service }) => {
             <Card.Text className="text-left ">
               {details.slice(0, 200)}
             </Card.Text>
-            <Button>Book Now</Button>
+            <NavLink to={`/service/${id}`}>
+              <button className="btn btn-warning">Book</button>
+            </NavLink>
           </Card.Body>
         </Card>
       </CardGroup>
