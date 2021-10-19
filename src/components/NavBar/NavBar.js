@@ -17,7 +17,7 @@ const NavBar = () => {
   };
   window.addEventListener("scroll", onChangeHeader);
   return (
-    <div className="flex justify-between">
+    <div className=" container flex justify-between">
       <Navbar
         expand="lg"
         fixed="top"
@@ -30,7 +30,7 @@ const NavBar = () => {
         <Container className="flex justify-between">
           <div>
             <Navbar.Brand className="text-black font-bold " href="#home">
-              Navbar
+              LIFE & CARE HOSPITAL
             </Navbar.Brand>
           </div>
           <div>
@@ -47,12 +47,16 @@ const NavBar = () => {
                 >
                   Services
                 </Nav.Link>
-                <Nav.Link className="text-black " href="#pricing">
-                  Pricing
+                <Nav.Link
+                  className="text-black "
+                  as={HashLink}
+                  to="/laboratory"
+                >
+                  Laboratory
                 </Nav.Link>
-                <Nav.Link className="text-black " href="#pricing">
-                  Sign Up
-                </Nav.Link>
+                {/* <Nav.Link className="text-black " as={HashLink} to="/signup">
+                  Signup
+                </Nav.Link> */}
                 <Nav.Link className="text-black " as={HashLink} to="/doctors">
                   Doctors
                 </Nav.Link>
@@ -61,8 +65,13 @@ const NavBar = () => {
                     Logout
                   </Nav.Link>
                 ) : (
-                  <Nav.Link as={HashLink} to="/login" className="text-black ">
-                    Login
+                  <Nav.Link
+                    className="text-black "
+                    as={HashLink}
+                    to="/signup"
+                    onClick={logOut}
+                  >
+                    Signup
                   </Nav.Link>
                 )}
                 <Navbar.Text className="text-black ">

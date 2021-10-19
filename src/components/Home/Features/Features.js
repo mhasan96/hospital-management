@@ -13,46 +13,44 @@ const Features = () => {
           className="text-left"
           style={{ backgroundColor: "#3eb8d7", padding: "40px" }}
         >
-          <h2>Top Quality Equipments</h2>
+          <p className="text-3xl">Top Quality Equipments</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas in
-            repellendus pariatur aperiam accusamus rem cupiditate tenetur maxime
-            corporis asperiores.
+            Health is not just the absence of a disease in the body. It is a
+            state of a complete mental, physical, and social well-being. Read
+            our list of Health Bytes here.
           </p>
         </div>
         <div className="text-left bg-blue-500" style={{ padding: "40px" }}>
-          <h2>24 Hours Service</h2>
+          <p className="text-3xl">24 Hours Service</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas in
-            repellendus pariatur aperiam accusamus rem cupiditate tenetur maxime
-            corporis asperiores.
+            Health is not just the absence of a disease in the body. It is a
+            state of a complete mental, physical, and social well-being. Read
+            our list of Health Bytes here.
           </p>
         </div>
         <div
           className="text-left"
           style={{ backgroundColor: "#3eb8d7", padding: "40px" }}
         >
-          <h2>Foreign Doctors</h2>
+          <p className="text-3xl">Foreign Doctors</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas in
-            repellendus pariatur aperiam accusamus rem cupiditate tenetur maxime
-            corporis asperiores.
+            Health is not just the absence of a disease in the body. It is a
+            state of a complete mental, physical, and social well-being. Read
+            our list of Health Bytes here.
           </p>
         </div>
       </div>
-      <h1 className="m-12">Why Us?</h1>
+      <p className="m-12 text-4xl">Why Us?</p>
       <div className="grid lg:grid-cols-2">
         <div className="mt-20">
-          <h1>Best Doctors</h1>
+          <p className="text-3xl">Best Doctors</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
-            voluptates corrupti possimus quaerat non consectetur! Adipisci ea
-            repellat voluptatem, eum minus in blanditiis doloribus. Itaque
-            perspiciatis nesciunt, ipsam, perferendis et rem pariatur impedit
-            earum odit voluptate quaerat? Nulla, natus ex nam delectus eius
-            suscipit iure aspernatur dolore dignissimos exercitationem quaerat
-            praesentium, aut corporis dolorem eaque consequuntur reprehenderit
-            magnam! Corrupti, expedita!
+            SevenHills Group has over two decades of experience in the
+            healthcare sector, and is known for providing quality healthcare and
+            valuable experience to all domestic and international patients. Our
+            healthcare offerings are supported by a team of compassionate and
+            dedicated medical professionals who have rich knowledge and
+            experience in their respective domains.
           </p>
         </div>
         <div className="flex-auto ml-20px">

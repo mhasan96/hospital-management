@@ -19,26 +19,26 @@ const Doctors = () => {
           className="text-left"
           style={{ backgroundColor: "#3eb8d7", padding: "40px" }}
         >
-          <h2>Specialist</h2>
+          <p className="text-3xl">Specialist</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas in
-            repellendus pariatur aperiam accusamus rem cupiditate tenetur maxime
-            corporis asperiores.
+            Health is not just the absence of a disease in the body. It is a
+            state of a complete mental, physical, and social well-being. Read
+            our list of Health Bytes here.
           </p>
         </div>
         <div className="text-left bg-blue-500" style={{ padding: "40px" }}>
-          <h2>24 Hours Service</h2>
+          <p className="text-3xl">24 Hours Service</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas in
-            repellendus pariatur aperiam accusamus rem cupiditate tenetur maxime
-            corporis asperiores.
+            Health is not just the absence of a disease in the body. It is a
+            state of a complete mental, physical, and social well-being. Read
+            our list of Health Bytes here.
           </p>
         </div>
         <div
           className="text-left"
           style={{ backgroundColor: "#3eb8d7", padding: "40px" }}
         >
-          <h2>Available Time</h2>
+          <p className="text-3xl">Available Time</p>
           <p>Monday-Tuesday: 2-8 PM</p>
           <hr />
           <p>Thursday: 5-10 PM</p>
@@ -46,7 +46,7 @@ const Doctors = () => {
           <p>Saturday-Sunday: 10-7 PM</p>
         </div>
       </div>
-      <h2>Specialist Doctors</h2>
+      <p className="text-3xl">Specialist Doctors</p>
       <div className="grid lg:grid-cols-4 mt-16 sm:grid-cols-1 gap-4">
         {doctors.map((doctor) => (
           <Doctor key={doctor.id} doctor={doctor}></Doctor>

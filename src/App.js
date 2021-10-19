@@ -7,6 +7,9 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import NavBar from "./components/NavBar/NavBar";
 import NotFound from "./components/NotFound/NotFound";
+import Laboratory from "./components/PrivateRoute/Laboratory/Laboratory";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Registration from "./components/Registration/Registration";
 import SingleService from "./components/SingleService/SingleService";
 
 function App() {
@@ -22,15 +25,18 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/login">
-              <Login></Login>
+            <Route path="/signup">
+              <Registration></Registration>
             </Route>
-            <Route path="/doctors">
+            <PrivateRoute path="/doctors">
               <Doctors></Doctors>
-            </Route>
-            <Route path="/service/:id">
+            </PrivateRoute>
+            <PrivateRoute path="/laboratory">
+              <Laboratory></Laboratory>
+            </PrivateRoute>
+            <PrivateRoute path="/service/:id">
               <SingleService></SingleService>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

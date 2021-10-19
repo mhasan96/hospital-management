@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardGroup, Button } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Card, CardGroup } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 // import Slider from "react-slick";
 
 const Service = ({ service }) => {
@@ -17,7 +17,9 @@ const Service = ({ service }) => {
               {details.slice(0, 200)}
             </Card.Text>
             <NavLink to={`/service/${id}`}>
-              <button className="btn btn-warning">Book</button>
+              <button className="bg-blue-400 hover:bg-blue-600 px-8 py-2 rounded-xl text-white hover:text-black">
+                Book
+              </button>
             </NavLink>
           </Card.Body>
         </Card>

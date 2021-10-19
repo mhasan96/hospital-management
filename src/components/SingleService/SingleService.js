@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import { Link, NavLink, useParams } from "react-router-dom";
-import Doctors from "../Doctors/Doctors";
+import { NavLink, useParams } from "react-router-dom";
 
 const SingleService = () => {
   let { id } = useParams();

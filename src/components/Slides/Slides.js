@@ -17,10 +17,6 @@ const Slides = () => {
             src={banner6}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
           <img
@@ -28,10 +24,6 @@ const Slides = () => {
             src={banner2}
             alt="Second slide"
           />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -39,12 +31,6 @@ const Slides = () => {
             src={banner3}
             alt="Third slide"
           />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -52,12 +38,6 @@ const Slides = () => {
             src={banner4}
             alt="Third slide"
           />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -65,40 +45,34 @@ const Slides = () => {
             src={banner5}
             alt="Third slide"
           />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <div
-        className="container flex justify-around flex-wrap"
+        className="container flex justify-around flex-wrap text-4xl "
         style={{ marginTop: "25px", marginBottom: "25px" }}
       >
-        <h3>
+        <p>
           <i
             style={{ marginRight: "20px", color: "rgba(0, 255, 255, 0.5)" }}
             className="fas fa-mobile-alt"
           ></i>
           +880156000000
-        </h3>
+        </p>
 
-        <h3>
+        <p>
           <i
             style={{ marginRight: "20px", color: "rgba(0, 255, 255, 0.5)" }}
             class="far fa-envelope"
           ></i>
-          Care&life@info.com
-        </h3>
-        <h3>
+          info@care.com
+        </p>
+        <p>
           <i
             style={{ marginRight: "20px", color: "rgba(0, 255, 255, 0.5)" }}
             class="fas fa-map-marker-alt"
           ></i>
           Dhanmondi, Dhaka
-        </h3>
+        </p>
       </div>
     </div>
   );
