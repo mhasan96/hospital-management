@@ -22,7 +22,7 @@ const SingleService = () => {
 
   return (
     <div className="container mt-24 ">
-      <h2> {singleService?.name} Details</h2>
+      <p className="text-4xl"> {singleService?.name} Details</p>
       <div className="grid lg:grid-cols-6 sm:grid-cols-1 mt-16 text-center  justify-center">
         <CardGroup className="col-start-2 col-span-4">
           <Card>

@@ -20,11 +20,13 @@ const useFirebase = () => {
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
 
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .finally(() => setIsLoading(false));
+    return (
+      signInWithPopup(auth, googleProvider)
+        // .then((result) => {
+        //   setUser(result.user);
+        // })
+        .finally(() => setIsLoading(false))
+    );
   };
   //User State Change
   useEffect(() => {
@@ -43,7 +45,10 @@ const useFirebase = () => {
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)
-      .then(() => {})
+      .then(() => {
+        setUser({});
+      })
+
       .finally(() => setIsLoading(false));
   };
 

@@ -4,7 +4,7 @@ import img from "../../../images/top-quality.png";
 const Features = () => {
   return (
     <div id="home" className="container">
-      <h1>World Class Treatment</h1>
+      <h1 className="text-4xl">World Class Treatment</h1>
       <div
         className=" grid sm:grid-cols-1  lg:grid-cols-3  gap-0"
         style={{ color: "white", padding: "20px" }}

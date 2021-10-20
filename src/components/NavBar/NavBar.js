@@ -29,7 +29,7 @@ const NavBar = () => {
       >
         <Container className="flex justify-between">
           <div>
-            <Navbar.Brand className="text-black font-bold " href="#home">
+            <Navbar.Brand className="text-black font-bold " href="/home">
               LIFE & CARE HOSPITAL
             </Navbar.Brand>
           </div>
@@ -74,10 +74,18 @@ const NavBar = () => {
                     Signup
                   </Nav.Link>
                 )}
-                <Navbar.Text className="text-black ">
-                  Signed in as: <a>{user?.displayName}</a>
+                <Navbar.Text className="text-black underline">
+                  <a>{user?.displayName}</a>
                   {/* console.log */}
                 </Navbar.Text>
+                <img
+                  style={{
+                    height: "40px",
+                    marginLeft: "10px",
+                  }}
+                  src={user?.photoURL}
+                  alt=""
+                />
               </Nav>
             </Navbar.Collapse>
           </div>

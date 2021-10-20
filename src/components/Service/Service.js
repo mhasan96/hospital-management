@@ -18,7 +18,7 @@ const Service = ({ service }) => {
             </Card.Text>
             <NavLink to={`/service/${id}`}>
               <button className="bg-blue-400 hover:bg-blue-600 px-8 py-2 rounded-xl text-white hover:text-black">
-                Book
+                Learn More
               </button>
             </NavLink>
           </Card.Body>
