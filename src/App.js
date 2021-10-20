@@ -4,7 +4,6 @@ import AuthProvider from "./components/context/AuthProvider";
 import Doctors from "./components/Doctors/Doctors";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
-import Login from "./components/Login/Login";
 import NavBar from "./components/NavBar/NavBar";
 import NotFound from "./components/NotFound/NotFound";
 import Laboratory from "./components/PrivateRoute/Laboratory/Laboratory";

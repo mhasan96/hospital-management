@@ -5,7 +5,7 @@ import {
   sendPasswordResetEmail,
   updateProfile,
 } from "firebase/auth";
-
+import React from "react";
 import { useState } from "react";
 import { useHistory, useLocation } from "react-router";
 
@@ -22,6 +22,7 @@ function Registration() {
   const histroy = useHistory();
   initializeAuthentication();
   const auth = getAuth();
+  const [showModal, setShowModal] = React.useState(false);
 
   //Redirect to Old Page
   const location = useLocation();
@@ -62,7 +63,7 @@ function Registration() {
     (password) => {
       signInWithEmailAndPassword(auth, email, password)
         .then((result) => {
-          // const user = result.user;
+          const user = result.user;
           histroy.push(location.state?.from || "/home");
           // window.history.reload();
           // console.log(user);
@@ -106,17 +107,17 @@ function Registration() {
   };
   return (
     <div className="container">
-      <div class="  flex flex-col w-full items-center mb-32 mt-32 mx-auto max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
-        <div class="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
+      <div className="  flex flex-col w-full items-center mb-32 mt-32 mx-auto max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+        <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
           Login To Your Account
         </div>
 
-        <div class="mt-8">
+        <div className="mt-8">
           <form onSubmit={handleRegistration}>
             {!isLogin && (
-              <div class="flex flex-col mb-2">
-                <div class="flex relative ">
-                  <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+              <div className="flex flex-col mb-2">
+                <div className="flex relative ">
+                  <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                     <svg
                       width="15"
                       height="15"
@@ -131,15 +132,15 @@ function Registration() {
                     type="name"
                     onBlur={handleNameChange}
                     id="sign-in-email"
-                    class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                    className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     placeholder="Your name"
                   />
                 </div>
               </div>
             )}
-            <div class="flex flex-col mb-2">
-              <div class="flex relative ">
-                <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+            <div className="flex flex-col mb-2">
+              <div className="flex relative ">
+                <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                   <svg
                     width="15"
                     height="15"
@@ -154,14 +155,14 @@ function Registration() {
                   type="email"
                   onBlur={handleEmailChange}
                   id="sign-in-email"
-                  class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                  className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your email"
                 />
               </div>
             </div>
-            <div class="flex flex-col mb-6">
-              <div class="flex relative ">
-                <span class="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+            <div className="flex flex-col mb-6">
+              <div className="flex relative ">
+                <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
                   <svg
                     width="15"
                     height="15"
@@ -176,64 +177,112 @@ function Registration() {
                   type="password"
                   onBlur={handlePasswordChange}
                   id="sign-in-email"
-                  class=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                  className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   placeholder="Your password"
                 />
               </div>
             </div>
-            <div class="flex items-center mb-6 -mt-4">
-              <div class="flex ml-auto cursor-pointer">
+            <div className="flex items-center mb-6 -mt-4">
+              <div className="flex ml-auto cursor-pointer">
                 {!isLogin && (
                   <p
                     href="#"
                     onClick={handleResetPassword}
-                    class="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
+                    className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
                   >
                     Forgot Your Password?
                   </p>
                 )}
               </div>
             </div>
-            <div class="flex w-full">
+            <div className="flex w-full">
               <button
                 type="submit"
-                class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                onClick={() => setShowModal(true)}
+                className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
               >
                 {isLogin ? "Login" : "Register"}
               </button>
+              {showModal && !isLogin && email ? (
+                <>
+                  <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                    <div className="relative w-auto my-6 mx-auto max-w-sm">
+                      {/*content*/}
+                      <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        {/*header*/}
+                        <div className="  p-5  border-blueGray-200 rounded-t">
+                          <svg
+                            className="h-20 w-20 border-1 bg-green-100 rounded-full  m-auto text-green-500"
+                            stroke="currentColor"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                        </div>
+                        {/*body*/}
+                        <div className="relative  p-6 flex-auto">
+                          <p className=" text-gray-500 text-4xl leading-relaxed">
+                            Great!!
+                          </p>
+                          <p className=" text-gray-400 text-lg leading-relaxed">
+                            Account has been Created Successfully
+                          </p>
+                        </div>
+                        {/*footer*/}
+                        <div className="flex items-center justify-center mb-4 border-solid rounded-b">
+                          <button
+                            className="text-white  background-transparent font-bold uppercase px-6 py-2 text-sm outline-none bg-blue-500 rounded-lg focus:outline-none  ease-linear transition-all duration-150"
+                            type="button"
+                            onClick={() => setShowModal(false)}
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                </>
+              ) : null}
             </div>
             <div className="row mb-3 mt-2 text-danger">{error}</div>
-            <div class="flex items-center justify-center mt-6 cursor-pointer">
+            <div className="flex items-center justify-center mt-6 cursor-pointer">
               {isLogin ? (
                 <p
                   target="_blank"
                   onClick={() => setIsLogin(false)}
-                  class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white ml-2"
+                  className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white ml-2"
                 >
-                  Already have an account?
+                  You don&#x27;t have an account?
                 </p>
               ) : (
                 <p
                   target="_blank"
                   onClick={() => setIsLogin(true)}
-                  class="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white ml-2"
+                  className="inline-flex items-center text-xs font-thin text-center text-gray-500 hover:text-gray-700 dark:text-gray-100 dark:hover:text-white ml-2"
                 >
-                  You don&#x27;t have an account?
+                  Already have an account?
                 </p>
               )}
             </div>
             <br />
-            <div class=" gap-4 item-center">
+            <div className=" gap-4 item-center">
               <button
                 type="button"
                 onClick={handleGoogleLogin}
-                class="py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                className="py-2 px-4 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
               >
                 <svg
                   width="20"
                   height="20"
                   fill="currentColor"
-                  class="mr-2"
+                  className="mr-2"
                   viewBox="0 0 1792 1792"
                   xmlns="http://www.w3.org/2000/svg"
                 >
